@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+        
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        margin-inline: auto;
+    }
+    .section1{
+        display: flex;
+        justify-content: space-between;
+        background-color: #000000;
+    }
+    .section1 nav{
+        display: flex;
+        padding: 10px;
+    }
+    nav ul{
+        list-style: none;
+        display: flex;
+        gap: 40px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+    }
+    nav ul #dropdown{
+        border: 0;
+        color: white;
+        background-color: #000000;
+        font-size: 15px;
+    }
+    nav ul #dropdown:hover{
+        background-color: gainsboro;
+        color: black;
+    }
+    nav ul a:hover{
+        background-color: gainsboro;
+        color: black;
+    }
+     .searchbar{
+         color: white;
+         float: right;
+         padding: 10px;
+     }
+     .searchbar:hover{
+        background-color: red;
+        color: white;
+     }
+
+
+    .section2 img{
+        width: 100%;
+        position: relative;
+   }
+   .section2-container{
+        position: absolute;
+        bottom: 10px;
+        left: 40%;
+        text-align: center;
+        color: white;
+   }
+   .sc3-sc4{
+    margin: 100px;
+   }
+   .section3{
+    text-align: center;
+    padding-inline: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 7px;
+   }
+   .section3 p{
+    text-align: left;
+   }
+   .section3 h6{
+    opacity: 0.5;
+    padding: 15px;
+    font-style: italic;
+   }
+   .section4{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 250px;
+    margin: 40px;
+   }
+   .section4 .section4-container{
+     max-width: 250px;
+     padding: 5px;
+     margin: 10px;
+   }
+   .section4 .section4-container img{
+    width: 100%;
+    padding: 15px;
+   }
+   .section4 .section4-container-box{
+    text-align: center;
+    padding: 15px;
+   }
+   .section4-container:hover{
+    background-color: gainsboro;
+    border-radius: 5px;
+   }
+   .section5{
+    background-color: #000000;
+    color: white;
+    padding: 50px;
+   }
+   
+   .section5-container1{
+    padding-inline: 350px;
+     text-align: center;
+    position: relative;
+   }
+   .section5-container1 h5{
+    padding: 20px;
+    opacity: 0.5;
+    font-style: italic;
+   }
+   .section5-container1 .dates h3{
+     background-color: white;
+     color: black;
+     border: 1px solid;
+     text-align: left;
+     padding: 5px;
+   }
+   .dates .sc-5 -date-span{
+    background-color: aqua;
+    position: absolute;
+    
+   }
+   .section5 .section5-container2{
+    display: flex;
+    justify-content: space-around;
+    padding-inline: 280px;
+    margin: 50px;
+
+   }
+   .sc-box1{
+    max-width: 230px;
+    background-color: white;
+    color: black;
+    
+   }
+   .section5 .sc-box1 img:hover{
+    opacity: 0.60;
+   }
+   .sc-box1 img{
+    width: 100%;
+   }
+   .sc-5-content{
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   }
+   .sc-box1 .sc-5-content h3{
+    opacity: 0.5;
+    font-size: 90%;
+    
+   }
+   .sc-box1 .sc-5-content a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 5px;
+   }
+   .sc-box1 .sc-5-content a:hover{
+    color: black;
+    background-color: gainsboro;
+   }
+   .dates h3:nth-of-type(1) span{
+    background-color: rgb(255, 102, 0);
+    padding-inline:10px;
+    margin-inline: 10px;
+    color: white;
+   }
+   .dates h3:nth-of-type(2) span{
+    background-color: rgb(255, 102, 0);
+    padding-inline:10px;
+    margin-inline: 10px;
+    color: white;
+   }
+   .dates h3:nth-of-type(3) span{
+    float: right;
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+    padding-inline: 6px;
+   }
+   .section6{
+     display: flex;
+     flex-direction: column;
+     margin: 100px;
+   }
+   .section6 .sc-6-main{
+       display: flex;
+       justify-content: space-between;
+       margin-inline: 300px;
+       
+
+   }
+   .sc-6-top{
+    text-align: center;
+    margin: 20px;
+    padding-inline: 250px;
+   }
+   .sc-6-top h4{
+    opacity: 0.5;
+    padding: 10px;
+    font-style: italic;
+   }
+   .sc-6-box2 input[type="text"]{
+     height: 30px;
+     width: 100%;
+     padding: 10px;
+   }
+   .input-set1{
+    display: flex;
+    gap: 10px;
+   }
+   .input-set2{
+    margin-block: 10px;
+   }
+   input:last-child{
+    width: 370px;
+   }
+   .send{
+    float: right;
+    background-color: black;
+    color: white;
+    padding: 5px;
+   }
+   .section-7 img{
+    width: 100%;
+   }
+   
+   .footer{
+    text-align: center;
+    margin: 50px;
+   }
+   .footer a i{
+       color: gray;
+   }
+
+</style>
+<body>
+    <div class="container">
+    <div class="section1">
+        <nav>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">BAND</a></li>
+                <li><a href="">TOUR</a></li>
+                <li><a href="">CONTACT</a></li>
+                <li><select id="dropdown">
+                    <option>MORE</option>
+                </select></li>
+                
+            </ul>
+            
+        </nav>
+           <a class="searchbar"><i class="fa-solid fa-magnifying-glass"></i></a>
+    </div>
+        <div class="section2">
+          <img src="/media/tourimg/losangels.jpg" alt="">
+          <div class="section2-container">
+            <h3>Los angeles </h3>
+            <p>We had the best time playing at venice Beach!</p>
+            </div>
+        </div>
+        <div class="sc3-sc4"> 
+    <div class="section3">
+        <h2>THE BAND</h2>
+        <h6>We love music </h6>
+        <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+    </div>
+    <div class="section4">
+        <div class="section4-container">
+            <div class="section4-container-box"><h3>Name</h3></div>
+            <img src="/media/tourimg/bandmember.jpg" alt="">
+        </div>
+         <div class="section4-container">
+            <div class="section4-container-box"><h3>Name</h3></div>
+            <img src="/media/tourimg/bandmember.jpg" alt="">
+        </div>
+         <div class="section4-container">
+            <div class="section4-container-box"><h3>Name</h3></div>
+            <img src="/media/tourimg/bandmember.jpg" alt="">
+        </div>
+    </div>
+    </div>
+    <div class="section5">
+    <div class="section5-container1">
+        <h3>TOUR DATES</h3>
+        <h5>Remember to biik your tickets!</h5>
+        <div class="dates">
+        <h3>September <span>Sold out</span></h3>
+        <h3>October <span>sold out</span></h3>
+        <h3>November <span class="sc-5 -date-span">3</span> </h3>
+        
+        </div>
+    </div>
+    <div class="section5-container2">
+        <div class="sc-box1">
+        <img src="media/tourimg/newyork.jpg" alt="">
+        <div class="sc-5-content">
+        <h4>New york</h4>
+        <h3>Fri 27 Nov 2016</h3>
+        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+        <div><a href="">Buy Tickets</a></div>
+       </div>
+        </div>
+        <div class="sc-box1">
+        <img src="media/tourimg/paris.jpg" alt="">
+        <div class="sc-5-content">
+            <h4>Paris</h4>
+        <h3>Fri 27 Nov 2016</h3>
+        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+        <div><a href="">Buy Tickets</a></div>
+       
+        </div>
+        </div>
+        <div class="sc-box1">
+        <img src="media/tourimg/sanfran.jpg" alt="">
+        <div class="sc-5-content">
+            <h4>Sanfran</h4>
+        <h3>Fri 27 Nov 2016</h3>
+        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+        <div><a href="">Buy Tickets</a></div>
+        
+         </div>
+        </div>
+    </div>
+    </div>
+    <div class="section6">
+        <div class="sc-6-top">
+         <h2>CONTACT</h2>
+         <h4>Fan?Drop a note!</h4>
+         </div>
+         <div class="sc-6-main">
+            <div class="sc-6-box1">
+                <h4><i class="fa-solid fa-location-dot"></i> chicago.US</h4>
+                <h4><i class="fa-solid fa-phone"></i> Phone:+00 151515</h4>
+                <h4><i class="fa-solid fa-envelope"></i> Email:mail@mail.com</h4>
+            </div>
+            <div class="sc-6-box2">
+                <div class="input-set1">
+                <input type="text"  placeholder="Name">
+                <input type="text"  placeholder="Email">
+                </div>
+                <div class="input-set2">
+                <input type="text"  placeholder="Message">
+                </div>
+                <div class="send">SEND</div>
+            </div>
+         </div>
+         
+    </div>
+        <div class="section-7">
+            <img src="/media/tourimg/map.jpg" alt="">
+        </div>
+        <div class="footer">
+            <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-snapchat"></i></a>
+            <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </div>
+</body>
+</html>
