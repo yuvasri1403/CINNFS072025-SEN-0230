@@ -14,6 +14,7 @@
         box-sizing: border-box;
     }
     .container{
+        max-width: 1000px;
         margin-inline: auto;
     }
     .section1{
@@ -58,11 +59,13 @@
         background-color: red;
         color: white;
      }
-
+     .section2{
+         position: relative;
+     }
 
     .section2 img{
         width: 100%;
-        position: relative;
+       
    }
    .section2-container{
         position: absolute;
@@ -76,7 +79,6 @@
    }
    .section3{
     text-align: center;
-    padding-inline: 300px;
     font-family: Arial, Helvetica, sans-serif;
     word-spacing: 7px;
    }
@@ -91,7 +93,6 @@
    .section4{
     display: flex;
     justify-content: space-between;
-    padding-inline: 250px;
     margin: 40px;
    }
    .section4 .section4-container{
@@ -112,13 +113,14 @@
     border-radius: 5px;
    }
    .section5{
-    background-color: #000000;
     color: white;
     padding: 50px;
    }
+   .sec5{
+    background-color: #000000;
+   }
    
    .section5-container1{
-    padding-inline: 350px;
      text-align: center;
     position: relative;
    }
@@ -142,7 +144,6 @@
    .section5 .section5-container2{
     display: flex;
     justify-content: space-around;
-    padding-inline: 280px;
     margin: 50px;
 
    }
@@ -180,41 +181,35 @@
     color: black;
     background-color: gainsboro;
    }
-   .dates h3:nth-of-type(1) span{
+   .dates span{
     background-color: rgb(255, 102, 0);
     padding-inline:10px;
     margin-inline: 10px;
     color: white;
-   }
-   .dates h3:nth-of-type(2) span{
-    background-color: rgb(255, 102, 0);
-    padding-inline:10px;
-    margin-inline: 10px;
-    color: white;
+    
    }
    .dates h3:nth-of-type(3) span{
     float: right;
     border-radius: 50%;
     color: white;
     background-color: black;
-    padding-inline: 6px;
    }
    .section6{
      display: flex;
      flex-direction: column;
-     margin: 100px;
+     margin-inline: auto;
    }
    .section6 .sc-6-main{
        display: flex;
        justify-content: space-between;
        margin-inline: 300px;
-       
-
+   }
+   .sc-6-box1 .tags{
+    display:flex;
    }
    .sc-6-top{
     text-align: center;
     margin: 20px;
-    padding-inline: 250px;
    }
    .sc-6-top h4{
     opacity: 0.5;
@@ -256,7 +251,7 @@
 
 </style>
 <body>
-    <div class="container">
+    <header>
     <div class="section1">
         <nav>
             <ul>
@@ -273,20 +268,30 @@
         </nav>
            <a class="searchbar"><i class="fa-solid fa-magnifying-glass"></i></a>
     </div>
+    </header>
+    <section>
         <div class="section2">
-          <img src="/tourbook/media/losangels.jpg" alt="">
+          <img src="/media/losangels.jpg" alt="">
           <div class="section2-container">
             <h3>Los angeles </h3>
             <p>We had the best time playing at venice Beach!</p>
             </div>
-        </div>
+            </section>
         <div class="sc3-sc4"> 
+    
+    <section>
+        <div class="container">
     <div class="section3">
         <h2>THE BAND</h2>
         <h6>We love music </h6>
         <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
     </div>
+    </div>
+    </section>
+    <section >
+        <div class="container">
     <div class="section4">
+
         <div class="section4-container">
             <div class="section4-container-box"><h3>Name</h3></div>
             <img src="/tourbook/media/bandmember.jpg" alt="">
@@ -301,15 +306,27 @@
         </div>
     </div>
     </div>
+    </div>
+    </section>
+    <section class="sec5">
+    <div class="container">
     <div class="section5">
     <div class="section5-container1">
         <h3>TOUR DATES</h3>
         <h5>Remember to biik your tickets!</h5>
         <div class="dates">
-        <h3>September <span>Sold out</span></h3>
-        <h3>October <span>sold out</span></h3>
-        <h3>November <span class="sc-5 -date-span">3</span> </h3>
-        
+            <div class="set">
+                <h3>September</h3>
+                 <span>Sold out</span>
+            </div>
+            <div class="set">
+        <h3>October</h3>
+         <span>sold out</span>
+        </div>
+        <div class="set">
+        <h3>November </h3>
+        <span class="sc-5 -date-span">3</span>
+        </div>
         </div>
     </div>
     <div class="section5-container2">
@@ -344,6 +361,11 @@
         </div>
     </div>
     </div>
+    </div>
+    </section>
+    <section>
+        <div class="container">
+        </section>
     <div class="section6">
         <div class="sc-6-top">
          <h2>CONTACT</h2>
@@ -351,9 +373,19 @@
          </div>
          <div class="sc-6-main">
             <div class="sc-6-box1">
-                <h4><i class="fa-solid fa-location-dot"></i> chicago.US</h4>
-                <h4><i class="fa-solid fa-phone"></i> Phone:+00 151515</h4>
-                <h4><i class="fa-solid fa-envelope"></i> Email:mail@mail.com</h4>
+                <div class="tags">
+                    <i class="fa-solid fa-location-dot"></i> 
+                    <h4>chicago.US</h4>
+                </div>
+                <div class="tags">
+                    <i class="fa-solid fa-phone"></i>
+                    <h4> Phone:+00 151515</h4>
+                </div>
+                <div class="tags">
+                    <i class="fa-solid fa-envelope"></i> 
+                    <h4>Email:mail@mail.com</h4>
+                </div>
+                
             </div>
             <div class="sc-6-box2">
                 <div class="input-set1">
@@ -368,6 +400,10 @@
          </div>
          
     </div>
+    </div>
+    </section>
+    <footer>
+        <div class="container">
         <div class="section-7">
             <img src="/tourbook/media/map.jpg" alt="">
         </div>
@@ -380,5 +416,7 @@
             <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
     </div>
+    </div>
+    </footer>
 </body>
 </html>
