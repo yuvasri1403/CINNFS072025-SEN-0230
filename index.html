@@ -119,6 +119,31 @@
    .sec5{
     background-color: #000000;
    }
+   .set{
+     display: flex;
+     background-color: white;
+     border: 1px solid #000000;
+     align-items: center;
+     gap: 10px;
+   }
+   .set3{
+     display: flex;
+     background-color: white;
+     border: 1px solid #000000;
+     align-items: center;
+     justify-content: space-between;
+   }
+   .set3 span{
+     color: white;
+     margin: 5px;
+     padding-inline: 5px;
+     background-color: black;
+     border-radius: 50%;
+   }
+   .set span{
+    background-color: orange;
+    padding: 5px;
+   }
    
    .section5-container1{
      text-align: center;
@@ -130,17 +155,11 @@
     font-style: italic;
    }
    .section5-container1 .dates h3{
-     background-color: white;
      color: black;
-     border: 1px solid;
      text-align: left;
      padding: 5px;
    }
-   .dates .sc-5 -date-span{
-    background-color: aqua;
-    position: absolute;
-    
-   }
+   
    .section5 .section5-container2{
     display: flex;
     justify-content: space-around;
@@ -181,19 +200,6 @@
     color: black;
     background-color: gainsboro;
    }
-   .dates span{
-    background-color: rgb(255, 102, 0);
-    padding-inline:10px;
-    margin-inline: 10px;
-    color: white;
-    
-   }
-   .dates h3:nth-of-type(3) span{
-    float: right;
-    border-radius: 50%;
-    color: white;
-    background-color: black;
-   }
    .section6{
      display: flex;
      flex-direction: column;
@@ -202,10 +208,11 @@
    .section6 .sc-6-main{
        display: flex;
        justify-content: space-between;
-       margin-inline: 300px;
+       margin-inline: 400px;
    }
    .sc-6-box1 .tags{
     display:flex;
+    padding: 5px;
    }
    .sc-6-top{
     text-align: center;
@@ -323,7 +330,7 @@
         <h3>October</h3>
          <span>sold out</span>
         </div>
-        <div class="set">
+        <div class="set3">
         <h3>November </h3>
         <span class="sc-5 -date-span">3</span>
         </div>
